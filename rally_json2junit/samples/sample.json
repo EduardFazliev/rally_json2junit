@@ -1,0 +1,101 @@
+{
+    "expected_failures": 0,
+    "failures": 0,
+    "skipped": 0,
+    "success": 11,
+    "test_cases": {
+        "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_get_flavor[id-1f12046b-753d-40d2-abb6-d8eb8b30cb2f,smoke]": {
+            "name": "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_get_flavor",
+            "status": "success",
+            "tags": [
+                "id-1f12046b-753d-40d2-abb6-d8eb8b30cb2f",
+                "smoke"
+            ],
+            "time": "0.57622"
+        },
+        "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors[id-e36c0eaa-dff5-4082-ad1f-3f9a80aa3f59,smoke]": {
+            "name": "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors",
+            "status": "success",
+            "tags": [
+                "id-e36c0eaa-dff5-4082-ad1f-3f9a80aa3f59",
+                "smoke"
+            ],
+            "time": "0.12305"
+        },
+        "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_filter_by_min_disk[id-3df2743e-3034-4e57-a4cb-b6527f6eac79]": {
+            "name": "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_filter_by_min_disk",
+            "status": "success",
+            "tags": [
+                "id-3df2743e-3034-4e57-a4cb-b6527f6eac79"
+            ],
+            "time": "0.10723"
+        },
+        "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_filter_by_min_ram[id-09fe7509-b4ee-4b34-bf8b-39532dc47292]": {
+            "name": "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_filter_by_min_ram",
+            "status": "success",
+            "tags": [
+                "id-09fe7509-b4ee-4b34-bf8b-39532dc47292"
+            ],
+            "time": "0.10399"
+        },
+        "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_limit_results[id-b26f6327-2886-467a-82be-cef7a27709cb]": {
+            "name": "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_limit_results",
+            "status": "success",
+            "tags": [
+                "id-b26f6327-2886-467a-82be-cef7a27709cb"
+            ],
+            "time": "0.05010"
+        },
+        "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_using_marker[id-6db2f0c0-ddee-4162-9c84-0703d3dd1107]": {
+            "name": "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_detailed_using_marker",
+            "status": "success",
+            "tags": [
+                "id-6db2f0c0-ddee-4162-9c84-0703d3dd1107"
+            ],
+            "time": "0.21060"
+        },
+        "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_filter_by_min_disk[id-10645a4d-96f5-443f-831b-730711e11dd4]": {
+            "name": "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_filter_by_min_disk",
+            "status": "success",
+            "tags": [
+                "id-10645a4d-96f5-443f-831b-730711e11dd4"
+            ],
+            "time": "0.10041"
+        },
+        "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_filter_by_min_ram[id-935cf550-e7c8-4da6-8002-00f92d5edfaa]": {
+            "name": "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_filter_by_min_ram",
+            "status": "success",
+            "tags": [
+                "id-935cf550-e7c8-4da6-8002-00f92d5edfaa"
+            ],
+            "time": "0.13587"
+        },
+        "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_limit_results[id-8d7691b3-6ed4-411a-abc9-2839a765adab]": {
+            "name": "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_limit_results",
+            "status": "success",
+            "tags": [
+                "id-8d7691b3-6ed4-411a-abc9-2839a765adab"
+            ],
+            "time": "0.04902"
+        },
+        "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_using_marker[id-e800f879-9828-4bd0-8eae-4f17189951fb]": {
+            "name": "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_using_marker",
+            "status": "success",
+            "tags": [
+                "id-e800f879-9828-4bd0-8eae-4f17189951fb"
+            ],
+            "time": "0.14106"
+        },
+        "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_with_detail[id-6e85fde4-b3cd-4137-ab72-ed5f418e8c24]": {
+            "name": "tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors_with_detail",
+            "status": "success",
+            "tags": [
+                "id-6e85fde4-b3cd-4137-ab72-ed5f418e8c24"
+            ],
+            "time": "0.10875"
+        }
+    },
+    "tests": 11,
+    "time": "3.73764",
+    "unexpected_success": 0
+}
