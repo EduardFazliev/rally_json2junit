@@ -19,11 +19,11 @@ status_attribute = 'status'
 success_status = 'success'
 traceback_attribute = 'traceback'
 message_attribute = 'message'
-tag_attribute = 'tags'
 skip_status = 'skip'
 skip_tag = 'skipped'
 fail_status = 'fail'
 fail_tag = 'failure'
+failed_test_message = 'test failed'
 error_status = 'error'
 error_tag = 'error'
 
@@ -58,14 +58,9 @@ if __name__ == "__main__":
         root.attrib['expected_failures'] = str(data['expected_failures'])
         root.attrib['unexpected_success'] = str(data['unexpected_success'])
         for test_case in data['test_cases']:
-            name_details = str(data['test_cases'][test_case][name_attribute]).\
-                split(".")
+            name_details = test_case.split(".")
             name = name_details[-1]
             class_name = ".".join(name_details[0:-1:1])
-            test_case_id = ""
-            for tag in data['test_cases'][test_case][tag_attribute]:
-                if str(tag).startswith('id-'):
-                    test_case_id = str(tag)[3:]
 
             test_case_element = SubElement(
                     root,
@@ -74,7 +69,7 @@ if __name__ == "__main__":
                         time_attribute:
                             str(data['test_cases'][test_case][time_attribute]),
                         name_attribute:
-                            "{}({})".format(name, test_case_id),
+                            name,
                         class_name_attribute:
                             class_name
                     }
@@ -96,9 +91,10 @@ if __name__ == "__main__":
                         test_case_element,
                         tag_to_add,
                         {
-                            message_attribute: message,
+                            message_attribute: failed_test_message,
                         },
                     )
+                    status_element.text = message
 
         with open("verification.xml", "w") as output_file:
             output_file.write(prettify(root))
