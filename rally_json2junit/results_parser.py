@@ -23,6 +23,7 @@ skip_status = 'skip'
 skip_tag = 'skipped'
 fail_status = 'fail'
 fail_tag = 'failure'
+failed_test_message = 'test failed'
 error_status = 'error'
 error_tag = 'error'
 
@@ -90,9 +91,10 @@ if __name__ == "__main__":
                         test_case_element,
                         tag_to_add,
                         {
-                            message_attribute: message,
+                            message_attribute: failed_test_message,
                         },
                     )
+                    status_element.text = message
 
         with open("verification.xml", "w") as output_file:
             output_file.write(prettify(root))
